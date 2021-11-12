@@ -1,0 +1,14 @@
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.exe
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.deps.json
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.runtimeconfig.json
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.runtimeconfig.dev.json
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.dll
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.pdb
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.csproj.AssemblyReference.cache
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.GeneratedMSBuildEditorConfig.editorconfig
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.AssemblyInfoInputs.cache
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.AssemblyInfo.cs
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.csproj.CoreCompileInputs.cache
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.dll
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.pdb
+E:\NILESH\C#\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.genruntimeconfig.cache
