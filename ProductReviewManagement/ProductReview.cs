@@ -79,5 +79,14 @@ namespace ProductReviewManagement
             }
             Console.WriteLine(n);
         }
+        public static void RetrieveIdAndReview(List<ProductReview> products)
+        {
+            var rev = products.Select(s => new { Id = s.ProductId, review = s.Review });
+
+            foreach (var i in rev)
+            {
+                Console.WriteLine("Product ID :" + i.Id + " Review :" + i.review);
+            }
+        }
     }
 }

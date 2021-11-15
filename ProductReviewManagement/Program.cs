@@ -14,6 +14,7 @@ namespace ProductReviewManagement
             Console.WriteLine("2.Retrive Top Three records");
             Console.WriteLine("3.Retrive records whoes rating is greater than 3");
             Console.WriteLine("4.Retrieving count by Rating");
+            Console.WriteLine("5.Retrive Id and Review");
 
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -30,7 +31,9 @@ namespace ProductReviewManagement
                 case 4:
                     ProductReview.RetrieveCount(products);
                     break;
-
+                case 5:
+                    ProductReview.RetrieveIdAndReview(products);
+                    break;
 
             }
         }
