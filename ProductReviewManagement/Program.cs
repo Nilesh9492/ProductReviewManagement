@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace ProductReviewManagement
 {
@@ -9,13 +8,14 @@ namespace ProductReviewManagement
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            List<ProductReview> products = new List<ProductReview>();
+            List<Product> products = new List<Product>();
+            ProductReview.AddProductReview(products);
             Console.WriteLine("1. Adding a Prodcut Review In list");
             Console.WriteLine("2.Retrive Top Three records");
             Console.WriteLine("3.Retrive records whoes rating is greater than 3");
             Console.WriteLine("4.Retrieving count by Rating");
             Console.WriteLine("5.Retrive Id and Review");
-
+            Console.WriteLine("6.Skip Top Five records");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,9 +34,13 @@ namespace ProductReviewManagement
                 case 5:
                     ProductReview.RetrieveIdAndReview(products);
                     break;
-
+                case 6:
+                    ProductReview.SkipRecords(products);
+                    break;
             }
-        }
 
+        }
     }
+
 }
+
