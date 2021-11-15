@@ -43,6 +43,7 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product Id :" + i.ProductId + ", User Id :" + i.UserId + ", Rating :" + i.Rating + ", REview :" + i.Review);
             }
             ProductReview.RetrieveTopThreeRecords(products);
+            ProductReview.Retrieve(products);
 
         }
         

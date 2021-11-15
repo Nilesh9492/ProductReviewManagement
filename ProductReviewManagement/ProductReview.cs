@@ -26,5 +26,11 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product Id :" + i.ProductId + ", User Id :" + i.UserId + ", Rating :" + i.Rating + ", REview :" + i.Review);
             }
         }
+        public static void Retrieve(List<ProductReview> products)
+        {
+            Console.WriteLine("Records greater than 7 rating among 1,11,13 are");
+            var result = (from product in products where product.Rating > 3 && (product.ProductId == 1 || product.ProductId == 4 || product.ProductId == 9) select product).ToList();
+            IterateMethod(result);
+        }
     }
 }
