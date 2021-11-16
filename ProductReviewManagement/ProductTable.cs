@@ -71,6 +71,18 @@ namespace ProductReviewManagement
                 Console.WriteLine($"{i["ProductId"]},{i["Review"]}");
             }
         }
+        public static void BasedOnUserId(List<Product> products)
+        {
+            DataTable table = AddDetails(products);
+            var res = from record in table.AsEnumerable() where record.Field<int>("UserId") == 10 orderby record.Field<int>("Rating") select record;
+            Console.WriteLine("Products with userId 10 are");
+            foreach (var i in res)
+            {
+                Console.WriteLine(".");
+                Console.WriteLine($"{i["ProductId"]}");
+
+            }
+        }
 
     }
 }

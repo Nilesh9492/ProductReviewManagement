@@ -36,6 +36,11 @@ namespace ProductReviewManagement
             products.Add(new Product() { ProductId = 23, UserId = 23, Rating = 8, Review = "Good", isLike = true });
             products.Add(new Product() { ProductId = 24, UserId = 24, Rating = 6, Review = "Average", isLike = true });
             products.Add(new Product() { ProductId = 25, UserId = 25, Rating = 9, Review = "Good", isLike = true });
+            products.Add(new Product() { ProductId = 26, UserId = 10, Rating = 9, Review = "Good", isLike = true });
+            products.Add(new Product() { ProductId = 27, UserId = 10, Rating = 7, Review = "Good", isLike = true });
+            products.Add(new Product() { ProductId = 28, UserId = 10, Rating = 8, Review = "Good", isLike = true });
+            products.Add(new Product() { ProductId = 29, UserId = 10, Rating = 5, Review = "Bad", isLike = true });
+            products.Add(new Product() { ProductId = 30, UserId = 10, Rating = 10, Review = "Good", isLike = true });
 
             foreach (var i in products)
             {

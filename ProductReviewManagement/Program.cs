@@ -20,6 +20,7 @@ namespace ProductReviewManagement
             Console.WriteLine("8.Retrive data using islike");
             Console.WriteLine("9.Find Average Rating");
             Console.WriteLine("10.Find Review of the product");
+            Console.WriteLine("11.Retrive all data based on the User id");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -52,6 +53,9 @@ namespace ProductReviewManagement
                     break;
                 case 10:
                     ProductTable.Review(products);
+                    break;
+                case 11:
+                    ProductTable.BasedOnUserId(products);
                     break;
             }
 
