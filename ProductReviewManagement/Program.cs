@@ -19,6 +19,7 @@ namespace ProductReviewManagement
             Console.WriteLine("7.Creating Table");
             Console.WriteLine("8.Retrive data using islike");
             Console.WriteLine("9.Find Average Rating");
+            Console.WriteLine("10.Find Review of the product");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -48,6 +49,9 @@ namespace ProductReviewManagement
                     break;
                 case 9:
                     ProductTable.AverageRating(products);
+                    break;
+                case 10:
+                    ProductTable.Review(products);
                     break;
             }
 
