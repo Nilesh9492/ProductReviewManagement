@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using System.Data;
 
 namespace ProductReviewManagement
 {
     class ProductTable
     {
-        public static void AddDetails(List<Product> products)
+        public static DataTable AddDetails(List<Product> products)
         {
             DataTable table = new DataTable();
             table.Columns.Add("ProductID");
@@ -27,7 +28,7 @@ namespace ProductReviewManagement
                 table.Rows.Add(row);
             }
             ViewTable(table);
-
+            return table;
         }
         public static void ViewTable(DataTable table)
         {
@@ -40,6 +41,18 @@ namespace ProductReviewManagement
                 }
                 Console.WriteLine(" ");
             }
+        }
+        public static int RetrieveBasedOnIsLike(List<Product> products)
+        {
+            int count = 0;
+            DataTable table = AddDetails(products);
+            var res = from t in table.AsEnumerable() where t.Field<bool>("isLike") == true select t;
+            foreach (var i in res)
+            {
+                Console.WriteLine($"{i["isLike"]}");
+                count++;
+            }
+            return count;
         }
 
     }

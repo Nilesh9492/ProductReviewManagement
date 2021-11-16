@@ -17,6 +17,7 @@ namespace ProductReviewManagement
             Console.WriteLine("5.Retrive Id and Review");
             Console.WriteLine("6.Skip Top Five records");
             Console.WriteLine("7.Creating Table");
+            Console.WriteLine("8.Retrive data using islike");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -40,6 +41,9 @@ namespace ProductReviewManagement
                     break;
                 case 7:
                     ProductTable.AddDetails(products);
+                    break;
+                case 8:
+                    ProductTable.RetrieveBasedOnIsLike(products);
                     break;
             }
 
