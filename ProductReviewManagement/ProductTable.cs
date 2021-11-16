@@ -54,6 +54,13 @@ namespace ProductReviewManagement
             }
             return count;
         }
+        public static void AverageRating(List<Product> products)
+        {
+            DataTable table = AddDetails(products);
+            double avg = (double)table.AsEnumerable().Average(x => x.Field<int>("Rating"));
+            Console.WriteLine("Average of ratings of all products is ");
+            Console.WriteLine(avg);
+        }
 
     }
 }
